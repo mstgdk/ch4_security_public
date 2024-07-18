@@ -22,7 +22,7 @@ public class ApiResponseError {
     }
     public ApiResponseError(HttpStatus status, String message, String requestURI) {
         this();
-        this.status=status; // yukardaki 1 parametreli, public const. çağrılıyor
+        this.status=status;
         this.message = message;
         this.requestURI = requestURI;
     }
