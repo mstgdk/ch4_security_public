@@ -1,5 +1,6 @@
 package com.patika.controller;
 
+
 import com.patika.dto.request.LoginRequest;
 import com.patika.dto.request.RegisterRequest;
 import com.patika.dto.response.LoginResponse;
@@ -7,9 +8,7 @@ import com.patika.message.PatikaResponse;
 import com.patika.message.ResponseMessage;
 import com.patika.security.Jwt.JwtUtils;
 import com.patika.service.UserService;
-import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import jakarta.validation.Valid;
-
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -17,6 +16,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
